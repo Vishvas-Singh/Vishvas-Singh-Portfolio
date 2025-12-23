@@ -59,6 +59,12 @@ export default function Portfolio() {
       tech: "Python, Alpha Vantage API, HTML, SMTP, Cron Jobs",
       description: "Developed automation program using Python to track daily stock market trends and financial news. Integrated Alpha Vantage API to fetch intra-day stock data with API handling, displaying insights with HTML. Automated market-close alerts using SMTP and cron jobs for email notifications, saving 45 minutes/day on research.",
       github: "https://github.com/Vishvas-Singh/stock-data-report"
+    }, 
+    {
+      title: "PostgreSQL Index Performance Analysis",
+      tech: "PostgreSQL, Flask, Python, Faker, psycopg2, HTML/CSS/JavaScript",
+      description: "Built Flask web application demonstrating database index impact on query performance with 10,000+ records. Implemented side-by-side comparison of indexed vs non-indexed queries, achieving 79.5% faster execution for single table queries and 21.2% improvement for JOIN operations. Automated data generation using Faker library for realistic testing scenarios.",
+      github: "https://github.com/Vishvas-Singh/PostgreSQL-Index-Performance-Analysis"
     }
   ];
 
