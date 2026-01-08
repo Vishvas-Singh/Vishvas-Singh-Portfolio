@@ -97,14 +97,14 @@ export default function Portfolio() {
                 />
             </div>
             <div className="flex-1">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Computer Science Student & Software Engineer</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Computer Science Student | Data Science & Software Engineering</h2>
               <p className="text-lg text-gray-700 mb-4">
                 I'm a junior at Arizona State University pursuing a B.S. in Computer Science with a 3.81 GPA. 
-                I'm passionate about building scalable applications, automating workflows, and leveraging data to solve real-world problems.
+                I'm passionate about data-driven problem solving, analytics, and building scalable data systems.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Currently working as an Undergraduate Research Intern at Barrett, The Honors College and Software Engineer at TAMID Group. 
-                I specialize in full-stack development, data engineering, and machine learning.
+                Currently working as an Undergraduate Research Intern through Barrett, The Honors College and Software Engineer at TAMID Group. 
+                I specialize in data engineering/analytics/science, machine learning, and software development.
               </p>
               <div className="flex gap-4">
                 <a href="https://github.com/Vishvas-Singh" target="_blank" rel="noopener noreferrer" 
