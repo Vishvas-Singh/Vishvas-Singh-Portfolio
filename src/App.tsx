@@ -97,7 +97,7 @@ export default function Portfolio() {
                 />
             </div>
             <div className="flex-1">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Computer Science Student | Data Science & Software Engineering</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Computer Science Student | Data & SWE</h2>
               <p className="text-lg text-gray-700 mb-4">
                 I'm a junior at Arizona State University pursuing a B.S. in Computer Science with a 3.81 GPA. 
                 I'm passionate about data-driven problem solving, analytics, and building scalable data systems.
