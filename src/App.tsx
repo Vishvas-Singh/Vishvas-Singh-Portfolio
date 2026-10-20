@@ -47,6 +47,11 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Honors Thesis – FinTech Tax Reporting Platform",
+      tech: "TypeScript, React, Excel Automation",
+      description: "Built 0→1 fintech platform with 6-member cross-functional team to help users navigate GAAP/IFRS tax reporting. Embedded business logic and translated accounting flowcharts into structured frontend UI/UX using TypeScript and React to automate Excel document generation workflows for 5+ modules. Led sprint planning and cross-functional collaboration of 7 teammates, accelerating module delivery by 30%."
+    },
+    {
       title: "Spotify Podcast Data Pipeline",
       tech: "Python, Apache Airflow, SQLite, XML, Vosk, pydub, REST APIs",
       description: "Engineered a fully automated ETL pipeline in Apache Airflow to ingest, store, and process podcast information from an RSS feed, handling daily scheduling and metadata persistence via SQLite. Integrated Vosk speech-to-text with audio preprocessing, achieving >90% transcription accuracy while reducing workload across 100+ episodes.",
@@ -69,11 +74,6 @@ export default function Portfolio() {
       tech: "PostgreSQL, Flask, Python, Faker, psycopg2, HTML/CSS/JavaScript",
       description: "Built Flask web application demonstrating database index impact on query performance with 10,000+ records. Implemented side-by-side comparison of indexed vs non-indexed queries, achieving 79.5% faster execution for single table queries and 21.2% improvement for JOIN operations. Automated data generation using Faker library for realistic testing scenarios.",
       github: "https://github.com/Vishvas-Singh/PostgreSQL-Index-Performance-Analysis"
-    },
-    {
-      title: "Honors Thesis – FinTech Tax Reporting Platform",
-      tech: "TypeScript, React, Excel Automation",
-      description: "Built 0→1 fintech platform with 6-member cross-functional team to help users navigate GAAP/IFRS tax reporting. Embedded business logic and translated accounting flowcharts into structured frontend UI/UX using TypeScript and React to automate Excel document generation workflows for 5+ modules. Led sprint planning and cross-functional collaboration of 7 teammates, accelerating module delivery by 30%."
     }
   ];
 
