@@ -1,41 +1,45 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
 import profilePic from './assets/vishvas.jpg';
+import AscensionLogo from './assets/Ascension.png';
+import ASULogo from './assets/ASU.png';
+import TAMIDLogo from './assets/TAMID.png';
 
 export default function Portfolio() {
   const experiences = [
     {
-      title: "Software Engineer (Honors Thesis)",
-      company: "Arizona State University/Barrett, The Honors College", 
-      location: "Tempe, AZ", 
-      period: "Sep 2025 - Present", 
+      title: "Data Engineering & Infrastructure Intern",
+      company: "Ascension",
+      location: "Remote",
+      period: "May 2026 – Aug 2026",
+      logo: AscensionLogo,
       bullets: [
-        "Deploying a full-stack accounting tool for a financial startup on AWS", 
-        "Backend: Django, Python", 
-        "Database: Dynamo DB", 
-        "Frontend: TypeScript, Tailwind CSS", 
-        "SDLC: Jira, Scrum"
+        "Led optimization of 4 production data pipelines in Airflow and BigQuery supporting data for 15 hospitals by rewriting inefficient SQL stored procedures, reducing runtime by 68% and compute consumption by up to 75%",
+        "Developed an Airflow-orchestrated ETL pipeline using medallion architecture, provisioning GCS buckets and BigQuery land/ingest layers for 3 file types and implemented SQL-based schema evolution and deduplication",
+        "Improved reliability of 2 production GCP pipelines by redesigning Python/Airflow logic to handle duplicate file runs and empty-source failures, eliminating unnecessary compute spend; deployed through Jenkins CI/CD"
       ]
     },
     {
       title: "Undergraduate Research Intern",
       company: "Barrett, The Honors College",
       location: "Tempe, AZ",
-      period: "Aug 2025 – Present",
+      period: "Aug 2025 – May 2026",
+      logo: ASULogo,
       bullets: [
-        "Leading data analysis on post-tenure law across 8 R1 states using difference-in-differences and event-based models",
-        "Leveraged Pandas and Google Scholar APIs to clean and enrich 20,000+ rows, enhancing data reliability for analysis",
-        "Automated web scraping in Python (Selenium and Beautiful Soup), reducing manual data collection time by 70%"
+        "Led data analysis on public policy law across 8 R1 states using difference-in-differences and event-study models",
+        "Leveraged Pandas and SQL to clean, normalize, and enrich 100,000+ rows, enhancing data reliability for analysis",
+        "Automated Google Scholar profile scraping in Python using Selenium and Beautiful Soup, implementing methods from published research to reduce manual data collection time by 70%"
       ]
     },
     {
       title: "Software Engineer",
       company: "TAMID Group, Arizona State University",
       location: "Tempe, AZ",
-      period: "Oct 2024 – Present",
+      period: "Jan 2023 – Present",
+      logo: TAMIDLogo,
       bullets: [
-        "Deployed official club website in TypeScript (hosted on Vercel), used by 25+ members, and streamlined campus recruitment for 400+ freshmen",
-        "Engineered scalable frontend architecture with custom React hooks, Context API, and CSS, enhancing UI/UX with responsive grid layouts",
+        "Deployed official club website in TypeScript (hosted on Vercel), used by 25+ members, and streamlined campus recruitment for 400+ freshmen, saving 7 hours per recruitment cycle and cutting application review time by 60%",
+        "Engineered scalable frontend architecture with custom React hooks and CSS, enhancing UI/UX and performance",
         "Collaborated in sprints with 5-person team using Git/GitHub and CI workflows, delivering project 3 weeks early"
       ]
     }
@@ -59,12 +63,17 @@ export default function Portfolio() {
       tech: "Python, Alpha Vantage API, HTML, SMTP, Cron Jobs",
       description: "Developed automation program using Python to track daily stock market trends and financial news. Integrated Alpha Vantage API to fetch intra-day stock data with API handling, displaying insights with HTML. Automated market-close alerts using SMTP and cron jobs for email notifications, saving 45 minutes/day on research.",
       github: "https://github.com/Vishvas-Singh/stock-data-report"
-    }, 
+    },
     {
       title: "PostgreSQL Index Performance Analysis",
       tech: "PostgreSQL, Flask, Python, Faker, psycopg2, HTML/CSS/JavaScript",
       description: "Built Flask web application demonstrating database index impact on query performance with 10,000+ records. Implemented side-by-side comparison of indexed vs non-indexed queries, achieving 79.5% faster execution for single table queries and 21.2% improvement for JOIN operations. Automated data generation using Faker library for realistic testing scenarios.",
       github: "https://github.com/Vishvas-Singh/PostgreSQL-Index-Performance-Analysis"
+    },
+    {
+      title: "Honors Thesis – FinTech Tax Reporting Platform",
+      tech: "TypeScript, React, Excel Automation",
+      description: "Built 0→1 fintech platform with 6-member cross-functional team to help users navigate GAAP/IFRS tax reporting. Embedded business logic and translated accounting flowcharts into structured frontend UI/UX using TypeScript and React to automate Excel document generation workflows for 5+ modules. Led sprint planning and cross-functional collaboration of 7 teammates, accelerating module delivery by 30%."
     }
   ];
 
@@ -119,19 +128,6 @@ export default function Portfolio() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* AI Chatbot Placeholder */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-8 border-2 border-dashed border-purple-300">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">🤖 AI Assistant (Coming Soon)</h3>
-            <p className="text-gray-700">
-              Interactive AI chatbot powered by Hugging Face will be integrated here. 
-              Ask me anything about my projects, experience, or skills!
-            </p>
           </div>
         </div>
       </section>
