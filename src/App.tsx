@@ -140,9 +140,16 @@ export default function Portfolio() {
             {experiences.map((exp, index) => (
               <div key={index} className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex justify-between items-start mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
-                    <p className="text-lg text-blue-600">{exp.company}</p>
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={exp.logo}
+                      alt={`${exp.company} logo`}
+                      className="w-14 h-14 object-contain flex-shrink-0"
+                    />
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
+                      <p className="text-lg text-blue-600">{exp.company}</p>
+                    </div>
                   </div>
                   <div className="text-right">
                     <p className="text-gray-600">{exp.location}</p>
@@ -173,12 +180,14 @@ export default function Portfolio() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
                 <p className="text-sm text-blue-600 mb-4">{project.tech}</p>
                 <p className="text-gray-700 mb-4 flex-grow">{project.description}</p>
-                <a href={project.github} target="_blank" rel="noopener noreferrer"
-                   className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium">
-                  <Github size={18} />
-                  View on GitHub
-                  <ExternalLink size={16} />
-                </a>
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium">
+                    <Github size={18} />
+                    View on GitHub
+                    <ExternalLink size={16} />
+                  </a>
+                )}
               </div>
             ))}
           </div>
